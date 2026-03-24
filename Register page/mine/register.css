@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+.form-validator{
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+label{
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    transition: border 0.3s;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid blue;
+    
+}
+
+small{
+    visibility: hidden;
+}
+
+.form-group.error input{
+    border: 2px solid red;
+
+}
+
+.form-group.error small{
+    visibility: visible;
+    color: red;
+}
+
+
+
+.form-group.success input{
+    border: 2px solid green;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: rgb(6, 6, 206);
+}
+
+.successful{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+    height: 200px;
+    font-size: 22px;
+}
+
+.successful img{
+    width:40px;
+}
